@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An app to learn Fetch API using TV Maze API."
+    />
+    <title>Busca de TV shows</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header-container">
+      <div id="bar" class="header">
+        <h1>Busca de filmes e séries</h1>
+        <form id="search-form">
+          <input
+            type="text"
+            id="query"
+            name="query"
+            placeholder="Digite TV Show"
+          />
+          <button>search</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div id="app" class="content">
+        <div id="results" class="results">
+          <p id="message" class="message"></p>
+          <ul id="shows" class="shows"></ul>
+        </div>
+        <p class="credit">by Thaay Souza</p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
